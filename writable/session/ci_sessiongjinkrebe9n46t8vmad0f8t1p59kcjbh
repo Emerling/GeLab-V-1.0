@@ -1,0 +1,1 @@
+__ci_last_regenerate|i:1638210422;_ci_previous_url|s:26:"http://localhost:8080/auth";fail|s:22:"Contraseña incorrecta";__ci_vars|a:2:{s:4:"fail";s:3:"old";s:13:"_ci_old_input";s:3:"old";}_ci_old_input|a:2:{s:3:"get";a:0:{}s:4:"post";a:3:{s:14:"csrf_test_name";s:32:"a364de3814985956d1d5d825d4e90d80";s:7:"usuario";s:8:"Emerling";s:8:"password";s:6:"asfsaf";}}

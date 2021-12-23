@@ -1,0 +1,1 @@
+__ci_last_regenerate|i:1639014231;_ci_previous_url|s:26:"http://localhost:8080/auth";fail|s:22:"Contraseña incorrecta";__ci_vars|a:2:{s:4:"fail";s:3:"old";s:13:"_ci_old_input";s:3:"old";}_ci_old_input|a:2:{s:3:"get";a:0:{}s:4:"post";a:3:{s:14:"csrf_test_name";s:32:"9674307a14a17a836be590b2de801b25";s:7:"usuario";s:13:"ana de rondon";s:8:"password";s:5:"12345";}}
