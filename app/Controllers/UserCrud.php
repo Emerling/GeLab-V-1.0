@@ -9,15 +9,17 @@ class UserCrud extends Controller
     public function index(){
         $userModel = new UserModel();
         $data['users'] = $userModel->orderBy('id', 'DESC')->findAll();
-        return view('user_view', $data);
+        echo view('user_view', $data);
+        echo view('piedepagina');
+
     }
 
-    // add user form
+    // show add user form
     public function create(){
         return view('add_user');
     }
  
-    // insert data
+    // insert data into database
     public function store() {
         $userModel = new UserModel();
         $data = [
@@ -32,7 +34,7 @@ class UserCrud extends Controller
     public function singleUser($id = null){
         $userModel = new UserModel();
         $data['user_obj'] = $userModel->where('id', $id)->first();
-        return view('edit_view', $data);
+        return view('edit_user', $data);
     }
 
     // update user data
