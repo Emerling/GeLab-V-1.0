@@ -38,7 +38,14 @@ $routes->get('/crud/obtenerNombre/(:any)', 'Crud::obtenerNombre/$1');
 $routes->get('/crud/eliminar/(:any)', 'Crud::eliminar/$1');
 $routes->put('/crud/crear', 'Crud::crear');
 $routes->put('/crud/actualizar', 'Crud::actualizar');
-// CRUD RESTful Routes
+
+$routes->group('', ['filter' => 'AuthCheckFilter'], function ($routes) {
+  // // // todas las rutas que se van a proteger 
+  $routes->get('/dashboard', 'Dashboard::index');
+  $routes->get('/dashboard/profile', 'Dashboard::profile');
+  $routes->get('/crud', 'Crud::index');
+
+  // CRUD RESTful Routes aqui van denegacion usuario validdo
 $routes->get('users-list', 'UserCrud::index');
 $routes->get('user-form', 'UserCrud::create');
 $routes->post('submit-form', 'UserCrud::store');
@@ -46,17 +53,17 @@ $routes->get('edit-view/(:num)', 'UserCrud::singleUser/$1');
 $routes->post('update', 'UserCrud::update');
 $routes->get('delete/(:num)', 'UserCrud::delete/$1');
 
-$routes->group('', ['filter' => 'AuthCheckFilter'], function ($routes) {
-  // // // todas las rutas que se van aproteger 
-  $routes->get('/dashboard', 'Dashboard::index');
-  $routes->get('/dashboard/profile', 'Dashboard::profile');
-  $routes->get('/crud', 'Crud::index');
 
 });
 $routes->group(' ', ['filter' => 'AlreadyLoggedFilter'], function ($routes) {
    $routes->get('/auth', 'Auth::index');
   $routes->get('/auth/register', 'Auth::register');
+
 });
+
+//  rutas del crud
+
+
 
 /*
  * --------------------------------------------------------------------
