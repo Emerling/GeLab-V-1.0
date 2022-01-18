@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>Codeigniter 4 Add User With Validation Demo</title>
+  <title>Codeigniter 4 CRUD - Edit User Demo</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
   <style>
     .container {
@@ -20,20 +20,22 @@
 
 <body>
   <div class="container mt-5">
-    <form method="post" id="add_create" name="add_create" 
-    action="<?= site_url('/submit-form') ?>">
+    <form method="post" id="update_user" name="update_user" 
+    action="<?= site_url('/update') ?>">
+      <input type="hidden" name="id" id="id" value="<?php echo $user_obj['id']; ?>">
+
       <div class="form-group">
-        <label>Nombre</label>
-        <input type="text" name="name" class="form-control">
+        <label>Name</label>
+        <input type="text" name="name" class="form-control" value="<?php echo $user_obj['name']; ?>">
       </div>
 
       <div class="form-group">
         <label>Email</label>
-        <input type="text" name="email" class="form-control">
+        <input type="email" name="email" class="form-control" value="<?php echo $user_obj['email']; ?>">
       </div>
 
       <div class="form-group">
-        <button type="submit" class="btn btn-primary btn-block">Actualizar Datos</button>
+        <button type="submit" class="btn btn-danger btn-block">Save Data</button>
       </div>
     </form>
   </div>
@@ -42,8 +44,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/additional-methods.min.js"></script>
   <script>
-    if ($("#add_create").length > 0) {
-      $("#add_create").validate({
+    if ($("#update_user").length > 0) {
+      $("#update_user").validate({
         rules: {
           name: {
             required: true,
