@@ -53,6 +53,15 @@ $routes->get('edit-view/(:num)', 'UserCrud::singleUser/$1');
 $routes->post('update', 'UserCrud::update');
 $routes->get('delete/(:num)', 'UserCrud::delete/$1');
 
+// CRUD RESTful Routes aqui  seccion 
+$routes->get('seccion-list', 'SeccionCrud::index');
+$routes->get('seccion-form', 'SeccionCrud::create');
+$routes->post('seccion-submit-form', 'SeccionCrud::store');
+$routes->get('seccion-edit-view/(:num)', 'SeccionCrud::singleSeccion/$1');
+$routes->post('seccion-update', 'SeccionCrud::updateseccion');
+$routes->get('seccion-delete/(:num)', 'SeccionCrud::deleteseccion/$1');
+
+
 
 });
 $routes->group(' ', ['filter' => 'AlreadyLoggedFilter'], function ($routes) {

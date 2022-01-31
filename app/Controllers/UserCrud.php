@@ -2,17 +2,39 @@
 namespace App\Controllers;
 use App\Models\UserModel;
 use CodeIgniter\Controller;
+use App\Models\CrudModel;
+
 
 class UserCrud extends Controller
 {
     // show users list
-    public function index(){
-        $userModel = new UserModel();
-        $data['users'] = $userModel->orderBy('id', 'DESC')->findAll();
-        echo view('user_view', $data);
-        echo view('piedepagina');
+        public function index(){
+           
+                $Crud = new CrudModel();
+                $datos = $Crud->listarNombres();
+                $usersModel = new \App\Models\UsersModel();
+                $loggedUserID = session()->get('loggedUser');
+                $userInfo = $usersModel->find($loggedUserID);
+                $mensaje = session('mensaje');
+                $dato = [
+                    "datos" => $datos,
+                    "userInfo" => $userInfo,
+                    "mensaje" => $mensaje,
+                ];
 
-    }
+                ///  datos de la vista
+                $userModel = new UserModel();
+                $data['users'] = $userModel->orderBy('id', 'DESC')->findAll();
+                ////
+            
+                echo view('head');
+
+            echo view('header',$dato);
+                ///// aqui dato  abajo data
+            echo view('user_view', $data);
+            echo view('piedepagina',$dato);
+
+        }
 
     // show add user form
     public function create(){

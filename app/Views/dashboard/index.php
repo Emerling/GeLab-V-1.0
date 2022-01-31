@@ -111,7 +111,7 @@
         <div class="mdb-page-content text-center page-intro bg-light">
             <div class="card-group">
                 <div class="card text-white bg-secondary mb-0">
-                    <i class="fas fa-id-card fa-4x card-img-top mt-2  "></i>
+                    <i class="fas fa-id-card fa-2x card-img-top mt-2  "></i>
 
                     <div class="card-body">
                         <h5 class="card-title">Agregar Paciente</h5>
@@ -123,7 +123,7 @@
 
                 </div>
                 <div class="card text-white bg-success mb-0">
-                    <i class="fas fa-vial fa-4x card-img-top mt-2 "></i>
+                    <i class="fas fa-vial fa-2x card-img-top mt-2 "></i>
                     <div class="card-body">
                         <h5 class="card-title">Exámenes de Laboratorio</h5>
                         <p class="card-text">
@@ -135,7 +135,7 @@
 
                 </div>
                 <div class="card text-white bg-info mb-0">
-                    <i class="fas fa-clipboard-list fa-4x card-img-top mt-2 "></i>
+                    <i class="fas fa-clipboard-list fa-2x card-img-top mt-2 "></i>
                     <div class="card-body">
                         <h5 class="card-title">Resultados de Laboratorio</h5>
                         <p class="card-text">
@@ -147,7 +147,7 @@
 
                 </div>
                 <div class="card text-white bg-danger mb-0">
-                    <i class="fas fa-calculator fa-4x card-img-top mt-2 "></i>
+                    <i class="fas fa-calculator fa-2x card-img-top mt-2 "></i>
                     <div class="card-body">
                         <h5 class="card-title">Presupuestos</h5>
                         <p class="card-text">
@@ -272,7 +272,7 @@
         <div class="mdb-page-content text-center page-intro bg-light">
             <div class="card-group">
                 <div class="card text-white bg-secondary mb-0">
-                    <i class="fas fa-id-card fa-4x card-img-top mt-2 "></i>
+                    <i class="fas fa-id-card fa-2x card-img-top mt-2 "></i>
 
                     <div class="card-body">
                         <h5 class="card-title">Agregar Paciente</h5>
@@ -285,7 +285,7 @@
 
                 </div>
                 <div class="card text-white bg-success mb-0">
-                    <i class="fas fa-vial fa-4x card-img-top mt-2 "></i>
+                    <i class="fas fa-vial fa-2x card-img-top mt-2 "></i>
                     <div class="card-body">
                         <h5 class="card-title">Exámenes de Laboratorio</h5>
                         <p class="card-text">
@@ -297,7 +297,7 @@
 
                 </div>
                 <div class="card text-white bg-info mb-0">
-                    <i class="fas fa-clipboard-list fa-4x card-img-top mt-2 "></i>
+                    <i class="fas fa-clipboard-list fa-2x card-img-top mt-2 "></i>
                     <div class="card-body">
                         <h5 class="card-title">Resultados de Laboratorio</h5>
                         <p class="card-text">
@@ -309,7 +309,7 @@
 
                 </div>
                 <div class="card text-white bg-danger mb-0">
-                    <i class="fas fa-calculator fa-4x card-img-top mt-2 "></i>
+                    <i class="fas fa-calculator fa-2x card-img-top mt-2 "></i>
                     <div class="card-body">
                         <h5 class="card-title">Presupuestos</h5>
                         <p class="card-text">
@@ -428,7 +428,7 @@
         <div class="mdb-page-content text-center page-intro bg-light">
             <div class="card-group">
                 <div class="card text-white bg-secondary mb-0">
-                    <i class="fas fa-id-card fa-4x card-img-top mt-2 "></i>
+                    <i class="fas fa-id-card fa-2x card-img-top mt-2 "></i>
 
                     <div class="card-body">
                         <h5 class="card-title">Agregar Paciente</h5>
@@ -441,7 +441,7 @@
 
                 </div>
                 <div class="card text-white bg-success mb-0">
-                    <i class="fas fa-vial fa-4x card-img-top mt-2 "></i>
+                    <i class="fas fa-vial fa-2x card-img-top mt-2 "></i>
                     <div class="card-body">
                         <h5 class="card-title">Exámenes de Laboratorio</h5>
                         <p class="card-text">
@@ -453,7 +453,7 @@
 
                 </div>
                 <div class="card text-white bg-info mb-0">
-                    <i class="fas fa-clipboard-list fa-4x card-img-top mt-2 "></i>
+                    <i class="fas fa-clipboard-list fa-2x card-img-top mt-2 "></i>
                     <div class="card-body">
                         <h5 class="card-title">Resultados de Laboratorio</h5>
                         <p class="card-text">
@@ -465,7 +465,7 @@
 
                 </div>
                 <div class="card text-white bg-danger mb-0">
-                    <i class="fas fa-calculator fa-4x card-img-top mt-2 "></i>
+                    <i class="fas fa-calculator fa-2x card-img-top mt-2 "></i>
                     <div class="card-body">
                         <h5 class="card-title">Presupuestos</h5>
                         <p class="card-text">
